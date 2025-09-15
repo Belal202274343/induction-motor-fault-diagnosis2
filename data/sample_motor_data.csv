@@ -1,0 +1,5 @@
+timestamp,motor_id,temperature,vibration_amplitude,current,voltage,speed_rpm,noise_level,fault_type
+2025-09-15 08:00:00,M001,75.2,0.15,12.5,220,1450,65,Healthy
+2025-09-15 08:15:00,M001,82.4,0.45,13.2,218,1445,72,Bearing_Fault
+2025-09-15 08:30:00,M002,78.9,0.22,12.8,221,1448,67,Healthy
+2025-09-15 08:45:00,M002,85.6,0.52,14.1,217,1442,75,Rotor_Fault

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Motor Fault Diagnosis</title>
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Motor Fault Diagnosis</h1>
+      <form action="/diagnose" method="post">
+        <div class="grid">
+          <label>Current (A)<input name="current" type="text"></label>
+          <label>Voltage (V)<input name="voltage" type="text"></label>
+          <label>Power (W)<input name="power" type="text"></label>
+          <label>RPM<input name="rpm" type="text"></label>
+          <label>Vibration<input name="vibration_level" type="text"></label>
+          <label>Visual Damage<input name="visual_damage" type="text"></label>
+          <label>Noise Level<select name="noise_level"><option>Low</option><option>Medium</option><option>High</option></select></label>
+          <label>Operating Condition<select name="operating_condition"><option>Normal</option><option>High Temp</option><option>Overloaded</option></select></label>
+          <label>Maintenance<select name="maintenance_status"><option>none</option><option>due soon</option><option>recent</option></select></label>
+        </div>
+        <div class="actions">
+          <button class="primary" type="submit">Diagnose</button>
+        </div>
+      </form>
+
+      <!-- Upload form removed by request -->
+    </div>
+    <div class="accent-circle" aria-hidden="true"></div>
+    <script src="/static/script.js"></script>
+  </body>
+</html>

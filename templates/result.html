@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Diagnosis Result</title>
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Diagnosis Result</h1>
+      <div class="result">Prediction: <strong>{{ prediction }}</strong></div>
+        {% if error %}
+        <div class="error">Error: {{ error }}</div>
+        <div class="submitted">
+          <h3>Submitted values</h3>
+          <ul>
+          {% for k, v in input.items() %}
+            <li><strong>{{ k }}:</strong> {{ v }}</li>
+          {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+      <a class="primary" href="/">Back</a>
+    </div>
+    <div class="accent-circle" aria-hidden="true"></div>
+    <script src="/static/script.js"></script>
+  </body>
+</html>

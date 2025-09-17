@@ -20,11 +20,14 @@ An AI project to classify induction motor condition (Healthy or Faulty) using ma
 ```bash
 git clone <repository-url>
 cd induction-motor-fault-diagnosis
-# create and activate a venv, then install dependencies
-python -m venv .venv
-.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-python main.py
+# create and activate a uv, then install dependencies
+Initialize Project: uv init --python 3.12
+
+Add Dependencies: uv add pandas scikit-learn matplotlib jupyter
+
+Install Dependencies: uv sync
+
+Run Scripts: uv run python main.py
 ```
 
 ## Recent changes (summary)
